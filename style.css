@@ -1,0 +1,56 @@
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 40%;
+    min-width: 300px;
+    height: 85vh;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 5vh;
+    color: white;
+}
+
+.panel input {
+    width: 100%;
+    justify-content: flex-end;
+    height: 15vh;
+    background-color: #000;
+    font-size: 9vh;
+    border-style: none;
+}
+
+.panel div {
+    display: flex;
+    flex-basis: 30%;
+    height: 10vh;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+div:nth-of-type(16),
+div:nth-of-type(17) {
+    flex-basis: 48%;
+}
+
+div.result~div:hover {
+    background-color: rgb(124, 196, 199);
+}
