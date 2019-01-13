@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .panel {
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            width: 60%;
+            min-width: 500px;
+            height: 85vh;
+            flex-wrap: wrap;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 5vh;
+            color: white;
+        }
+
+        .panel div {
+            display: flex;
+            flex-basis: 30%;
+            height: 10vh;
+            background-color: cadetblue;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .panel div.result {
+            flex-basis: 100%;
+            justify-content: flex-end;
+            padding-right: 30px;
+            height: 15vh;
+            background-color: #000;
+            font-size: 9vh;
+        }
+
+        div:nth-of-type(17),
+        div:nth-of-type(18) {
+            flex-basis: 48%;
+        }
+
+        div.result~div:hover {
+            background-color: rgb(57, 54, 218);
+        }
+
+        /* div.result:hover {
+            background-color: #000;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="result">2 343.89</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+        <div>0</div>
+        <div>-</div>
+        <div>/</div>
+        <div>.</div>
+        <div>*</div>
+        <div>C</div>
+        <div>=</div>
+    </div>
+</body>
+
+</html>
